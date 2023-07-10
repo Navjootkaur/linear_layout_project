@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="12dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:layout_margin="12dp"
+        android:textStyle="bold|italic"
         android:text="Hello World!"/>
 
     <TextView
@@ -20,46 +21,54 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        android:text="Enter your name:"/>
+        android:text=" Enter your name:"
+        android:id="@+id/tvname"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:Hints="name"
+        android:hint="name"
         android:textSize="24sp"
-        android:text="Navjot"/>
+        android:id="@+id/etName"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        android:text="Enter your class rollno:"/>
+        android:text=" Enter your class rollno:"
+        android:id="@+id/tvRollno"/>
+
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:textSize="20sp"
-        android:text="2131313"/>
+        android:hint="college rollno"
+        android:id="@+id/etRollno"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22sp"
         android:textStyle="bold|italic"
-        android:text="Enter some thing about yourself:"
+        android:text=" Enter some thing about yourself:"
+        android:id="@+id/tvYourself"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:hint="about yourself"
-        android:text="cxfgxfgb"/>
+        android:id="@+id/etYourself"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
         android:textStyle="bold|italic"
-        android:text="validate"/>
+        android:text="validate"
+        android:id="@+id/btnValidate"/>
 
 </LinearLayout>
